@@ -16,7 +16,7 @@ end_date = pd.to_datetime("2024-10-31")
 df = df[(df["date"] >= start_date) & (df["date"] <= end_date)]
 
 # Remove unwanted TopicNumbers including -1 and low-quality topics
-df = df[~df["TopicNumber"].isin([-1, 2, 56, 64, 26, 14, 12, 16, 9,])]
+df = df[~df["TopicNumber"].isin([-1, 2, 56, 55, 62, 64, 26, 14, 12, 16,])]
 
 #create a new column in year-month format
 df["month_year"] = df["date"].dt.to_period("M").astype(str)

@@ -9,6 +9,9 @@ df = pd.read_csv("../dataframes/tfidf/tfidf-over-0.7-with-topics.csv")
 #group the year, month, and day into proper datatime format for eaisier time-based analysis
 df["date"] = pd.to_datetime(df[["year", "month", "day"]])
 
+# Remove rows with -1 TopicNumber which are unnecessary
+df = df[~df["TopicNumber"].isin([-1, 56, 55, 62, 64, 26, 12, 16])] #Chatgpt (Conversation 0)
+
 #create a new column in year-month format to group articles by month
 df["month_year"] = df["date"].dt.to_period("M").astype(str)
 

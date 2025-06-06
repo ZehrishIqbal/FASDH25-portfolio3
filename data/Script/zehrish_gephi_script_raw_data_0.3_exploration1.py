@@ -12,6 +12,7 @@ print(df.columns)
 print(df.head(10))
 
 #check whether there are any null values in the data
+#help from chatgpt (conversation 4)
 print(df.isnull().sum()) #prints the number of missing values
 
 #create the edges list for plotting on Gephi by renaming the relavent columns
