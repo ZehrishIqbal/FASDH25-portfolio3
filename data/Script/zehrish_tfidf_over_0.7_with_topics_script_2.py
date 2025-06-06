@@ -96,4 +96,4 @@ stacked_df = stacked_df.drop_duplicates()
 #print first 10 rows 
 print (stacked_df.head(10))    
 #save the dataset containing high similarity articles with topics to a CSV to use in future for visualization and analysis.
-stacked_df.to_csv("C:/Users/HP/Downloads/FASDH25-portfolio3/data/dataframes/tfidf/tfidf-over-0.7-with-topics.csv", index=False)
+stacked_df.to_csv("C:/Users/HP/Downloads/FASDH25-portfolio3/data/self_generated_data_from_tfidf/tfidf-over-0.7-with-topics.csv", index=False)

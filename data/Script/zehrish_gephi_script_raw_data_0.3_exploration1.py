@@ -25,7 +25,7 @@ edges_df = edges_df[["Source", "Target", "Weight"]]
 #print it to check
 print(edges_df)
 #save the edges list as a CSV file for visualization on Gephi
-edges_df.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\dataframes\\tfidf\\Gephi\\0.3_edges.csv", 
+edges_df.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\Gephi\\0.3_edges.csv", 
                 index=False, encoding="utf-8-sig")
 
 #create source node with filename, title, and month
@@ -50,5 +50,5 @@ nodes = nodes.drop_duplicates()
 print(nodes)
 
 #save the nodes list as a CSV for network visualization in Gephi
-nodes.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\dataframes\\tfidf\\Gephi\\0.3_nodes.csv",index=False, encoding="utf-8-sig")
+nodes.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\Gephi\\0.3_nodes.csv",index=False, encoding="utf-8-sig")
                               

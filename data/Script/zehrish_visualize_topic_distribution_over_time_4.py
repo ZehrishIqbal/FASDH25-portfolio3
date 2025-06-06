@@ -4,7 +4,7 @@ import pandas as pd #for handlilng dataframes
 import plotly.express as px # for visualizations
 
 #Load the stacked dataframe containing data from TF-IDF and also topic numbers and topic words from Topic model dataset
-df = pd.read_csv("../dataframes/tfidf/tfidf-over-0.7-with-topics.csv")
+df = pd.read_csv("../self_generated_data_from_tfidf/tfidf-over-0.7-with-topics.csv")
 
 #group the year, month, and day into proper datatime format for eaisier time-based analysis
 df["date"] = pd.to_datetime(df[["year", "month", "day"]])

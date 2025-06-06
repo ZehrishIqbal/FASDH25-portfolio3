@@ -3,7 +3,7 @@
 import pandas as pd #for handling csv files or dataframes
 
 #load the filtered high similarity csv 
-df = pd.read_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\dataframes\\tfidf\\tfidf-over-0.7.csv")
+df = pd.read_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\tfidf-over-0.7.csv")
 
 
 #create the edges list for plotting on Gephi by remainig the relavent columns
@@ -15,7 +15,7 @@ edges_df = edges_df[["Source", "Target", "Weight"]]
 #print it to check and confirm
 print(edges_df)
 #save the edges list as a CSV file for visualization in Gephi
-edges_df.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\dataframes\\tfidf\\Gephi\\edges.csv", 
+edges_df.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\Gephi\\edges.csv", 
                 index=False, encoding="utf-8-sig")
 
 #create source node with filename, title, and month
@@ -36,6 +36,6 @@ nodes = nodes.drop_duplicates()
 #print the list of nodes to check and confirm
 print(nodes)                                 
 #save the nodes list as a CSV file for network visualization on gephi
-nodes.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\dataframes\\tfidf\\Gephi\\nodes.csv", 
+nodes.to_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\Gephi\\nodes.csv", 
              index=False, encoding="utf-8-sig")
                               

@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 #Load the stacked dataframe
-df = pd.read_csv("../dataframes/tfidf/tfidf-over-0.7-with-topics.csv")
+df = pd.read_csv("C:\\Users\\HP\\Downloads\\FASDH25-portfolio3\\data\\self_generated_data_from_tfidf\\tfidf-over-0.7-with-topics.csv")
 
 #group the year, month, and day using pd.to_datetime
 df["date"] = pd.to_datetime(df[["year", "month", "day"]])
